@@ -5,11 +5,13 @@ import HomeIcon from '@mui/icons-material/Home'
 import { pink } from '@mui/material/colors'
 import Typography from '@mui/material/Typography'
 import {
-  useColorScheme
+  Experimental_CssVarsProvider as CssVarsProvider,
+  experimental_extendTheme as extendTheme,
+  useColorScheme,
 } from '@mui/material/styles'
 
 function ModeToggle() {
-  const { mode, setMode } = useColorScheme()
+  const { mode, setMode } = useColorScheme();
   return (
     <Button
       onClick={() => {
@@ -24,8 +26,7 @@ function ModeToggle() {
 function App() {
   return (
     <>
-      <ModeToggle />
-      <hr />
+      </hr>
       <div>trungquandev</div>
 
       <Typography variant="body2" color="text.secondary">Test Typography</Typography>
