@@ -45,7 +45,7 @@ function AppBar() {
         <TextField id="outlined-search" label="Search ..." type="search" size='small' />
         <ModeSelect />
 
-        <Tooltip title="Notifications">
+        <Tooltip title="Notification">
           <Badge color="secondary" variant="dot" sx={{ cursor: 'pointer' }}>
             <NotificationsNoneIcon sx={{ color: 'primary.main' }} />
           </Badge>
